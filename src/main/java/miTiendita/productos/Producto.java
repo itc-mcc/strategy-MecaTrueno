@@ -4,7 +4,6 @@ public class Producto {
     int clave;
     String descripcion;
     double punit;
-    int ctd;
 
     Producto(int clave, String descripcion, double punit)
     {
@@ -13,18 +12,17 @@ public class Producto {
         this.punit = punit;
     }
 
-    double getPunit()
-    {
+    public double getPunit() {
         return punit;
-    }
-
-    int getCtd()
-    {
-        return ctd;
     }
 
     public String toString()
     {
         return descripcion;
     }
+
+    public int getClave() {
+        return clave;
+    }
+
 }
